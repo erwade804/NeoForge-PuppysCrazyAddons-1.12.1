@@ -1,4 +1,6 @@
 {
   "item.puppyscrazyaddons.puppore": "Puppore",
-  "item.puppyscrazyaddons.raw_puppore": "Raw Puppore"
+  "item.puppyscrazyaddons.raw_puppore": "Raw Puppore",
+  "block.puppyscrazyaddons.puppore_block": "Puppore Block",
+  "block.puppyscrazyaddons.puppore_stone_ore": "Puppore Ore Block"
 }

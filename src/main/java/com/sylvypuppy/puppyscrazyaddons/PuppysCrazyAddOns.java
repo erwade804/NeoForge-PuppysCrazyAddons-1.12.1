@@ -1,5 +1,6 @@
 package com.sylvypuppy.puppyscrazyaddons;
 
+import com.sylvypuppy.puppyscrazyaddons.block.ModBlocks;
 import com.sylvypuppy.puppyscrazyaddons.item.ModItems;
 import org.slf4j.Logger;
 
@@ -45,7 +46,9 @@ public class PuppysCrazyAddOns {
     public PuppysCrazyAddOns(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         modEventBus.addListener(this::addCreative);
@@ -61,6 +64,11 @@ public class PuppysCrazyAddOns {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.Puppore);
             event.accept(ModItems.Raw_Puppore);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.Puppore_Block);
+            event.accept(ModBlocks.Puppore_Stone_Ore);
         }
 
 
