@@ -1,5 +1,6 @@
 package com.sylvypuppy.puppyscrazyaddons;
 
+import com.sylvypuppy.puppyscrazyaddons.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -44,11 +45,10 @@ public class PuppysCrazyAddOns {
     public PuppysCrazyAddOns(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+        ModItems.register(modEventBus);
 
-        // Register the item to a creative tab
+
         modEventBus.addListener(this::addCreative);
-
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
@@ -58,6 +58,11 @@ public class PuppysCrazyAddOns {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.Puppore);
+            event.accept(ModItems.Raw_Puppore);
+        }
+
 
     }
 
