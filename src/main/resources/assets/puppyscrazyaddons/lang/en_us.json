@@ -9,5 +9,6 @@
   "item.puppyscrazyaddons.unrefined_chisel": "Unrefined Puppore Chisel",
   "item.puppyscrazyaddons.magic_block": "Magical Food Storage",
   "item.puppyscrazyaddons.puppore_apple": "Puppore Apple",
-  "item.puppyscrazyaddons.puppore_coal": "Puppore Coal"
+  "item.puppyscrazyaddons.puppore_coal": "Puppore Coal",
+  "tooltip.puppyscrazyaddons.magic_block.tooltip": "Stores food inside for later use!"
 }
