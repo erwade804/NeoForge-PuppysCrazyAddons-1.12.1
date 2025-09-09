@@ -61,10 +61,16 @@ public class PuppysCrazyAddOns {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.Puppore);
             event.accept(ModItems.Raw_Puppore);
+            event.accept(ModItems.Puppore_Coal);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.Puppore_Apple);
+        }
+
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.Chisel);
             event.accept(ModItems.Unrefined_Chisel);
