@@ -1,6 +1,7 @@
 package com.sylvypuppy.puppyscrazyaddons.block;
 
 import com.sylvypuppy.puppyscrazyaddons.PuppysCrazyAddOns;
+import com.sylvypuppy.puppyscrazyaddons.block.custom.MagicBlock;
 import com.sylvypuppy.puppyscrazyaddons.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -28,6 +29,16 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> Puppore_Brick = registerBlock("puppore_brick",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE_BRICKS)));
+    public static final DeferredBlock<Block> Magic_Block = registerBlock("magic_block",
+            ()-> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE_BRICKS)));
 
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

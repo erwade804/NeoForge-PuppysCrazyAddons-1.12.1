@@ -2,5 +2,10 @@
   "item.puppyscrazyaddons.puppore": "Puppore",
   "item.puppyscrazyaddons.raw_puppore": "Raw Puppore",
   "block.puppyscrazyaddons.puppore_block": "Puppore Block",
-  "block.puppyscrazyaddons.puppore_stone_ore": "Puppore Ore Block"
+  "block.puppyscrazyaddons.puppore_stone_ore": "Puppore Ore Block",
+  "block.puppyscrazyaddons.puppore_brick": "Puppore Bricks",
+
+  "item.puppyscrazyaddons.chisel": "Puppore Chisel",
+  "item.puppyscrazyaddons.unrefined_chisel": "Unrefined Puppore Chisel",
+  "item.puppyscrazyaddons.magic_block": "Magical Food Storage"
 }

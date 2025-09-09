@@ -65,10 +65,16 @@ public class PuppysCrazyAddOns {
             event.accept(ModItems.Puppore);
             event.accept(ModItems.Raw_Puppore);
         }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.Chisel);
+            event.accept(ModItems.Unrefined_Chisel);
+        }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.Puppore_Block);
             event.accept(ModBlocks.Puppore_Stone_Ore);
+            event.accept(ModBlocks.Puppore_Brick);
+            event.accept(ModBlocks.Magic_Block);
         }
 
 
