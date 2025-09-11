@@ -22,7 +22,8 @@ public class ChiselItem extends Item {
                     Blocks.END_STONE, Blocks.END_STONE_BRICKS,
                     Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
                     ModBlocks.Puppore_Block.get(), ModBlocks.Puppore_Brick.get(),
-                    Blocks.NETHERRACK, Blocks.NETHER_BRICKS
+                    Blocks.NETHERRACK, Blocks.NETHER_BRICKS,
+                    ModBlocks.Magic_Block.get(), ModBlocks.Puppore_Brick.get()
             );
 
     public ChiselItem(Properties properties){

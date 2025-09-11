@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [{"item":  "puppyscrazyaddons:puppore_block"}],
-  "result": {
-    "count": 9,
-    "id": "puppyscrazyaddons:puppore"
-  }
-}
