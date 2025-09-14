@@ -3,13 +3,52 @@ package com.sylvypuppy.puppyscrazyaddons.item;
 import com.sylvypuppy.puppyscrazyaddons.PuppysCrazyAddOns;
 import com.sylvypuppy.puppyscrazyaddons.item.custom.ChiselItem;
 import com.sylvypuppy.puppyscrazyaddons.item.custom.FuelItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PuppysCrazyAddOns.MODID);
+
+
+    /*
+        Puppore Tools
+    */
+    public static final DeferredItem<SwordItem> Puppore_Sword = ITEMS.register("puppore_sword",
+            () -> new SwordItem(ModToolTiers.PUPPORE,
+                    new Item.Properties()
+                            .attributes(
+                                    SwordItem.createAttributes(
+                                        ModToolTiers.PUPPORE, 5, -2.4f))));
+    public static final DeferredItem<PickaxeItem> Puppore_Pickaxe = ITEMS.register("puppore_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PUPPORE,
+                    new Item.Properties()
+                            .attributes(
+                                    PickaxeItem.createAttributes(
+                                            ModToolTiers.PUPPORE, 2, -2.4f))));
+    public static final DeferredItem<HoeItem> Puppore_Hoe = ITEMS.register("puppore_hoe",
+            () -> new HoeItem(ModToolTiers.PUPPORE,
+                    new Item.Properties()
+                            .attributes(
+                                    HoeItem.createAttributes(
+                                            ModToolTiers.PUPPORE, 1, -2.4f))));
+    public static final DeferredItem<AxeItem> Puppore_Axe = ITEMS.register("puppore_axe",
+            () -> new AxeItem(ModToolTiers.PUPPORE,
+                    new Item.Properties()
+                            .attributes(
+                                    AxeItem.createAttributes(
+                                            ModToolTiers.PUPPORE, 7, -2.4f))));
+    public static final DeferredItem<ShovelItem> Puppore_Shovel = ITEMS.register("puppore_shovel",
+            () -> new ShovelItem(ModToolTiers.PUPPORE,
+                    new Item.Properties()
+                            .attributes(
+                                    ShovelItem.createAttributes(
+                                            ModToolTiers.PUPPORE, 2, -2.4f))));
+
+    /*
+        All other items
+     */
 
     public static final DeferredItem<Item> Puppore = ITEMS.register("puppore",
             () -> new Item(new Item.Properties()));

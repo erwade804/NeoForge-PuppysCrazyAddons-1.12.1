@@ -37,6 +37,56 @@ public class ModShapedRecipes extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput, "puppyscrazyaddons:puppore_block_from_puppore");
 
 
+        /*
+
+            Tools
+
+         */
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Pickaxe.get())
+                .pattern("CCC")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.Puppore.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_puppore", has(ModItems.Puppore))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_pickaxe_craft");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Axe.get())
+                .pattern("CC ")
+                .pattern("CB ")
+                .pattern(" B ")
+                .define('C', ModItems.Puppore.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_puppore", has(ModItems.Puppore))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_axe_craft");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Hoe.get())
+                .pattern("CC ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.Puppore.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_puppore", has(ModItems.Puppore))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_hoe_craft");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Sword.get())
+                .pattern(" C ")
+                .pattern(" C ")
+                .pattern(" B ")
+                .define('C', ModItems.Puppore.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_puppore", has(ModItems.Puppore))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_sword_craft");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Shovel.get())
+                .pattern(" C ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('C', ModItems.Puppore.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_puppore", has(ModItems.Puppore))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_shovel_craft");
 
         /*
 

@@ -17,7 +17,6 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_PUPPORE_STONE_ORE = registerKey("add_puppore_stone_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context){
-        // CF -> PC -> BM
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 

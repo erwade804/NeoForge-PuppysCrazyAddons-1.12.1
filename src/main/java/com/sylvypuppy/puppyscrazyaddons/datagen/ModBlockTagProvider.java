@@ -2,6 +2,7 @@ package com.sylvypuppy.puppyscrazyaddons.datagen;
 
 import com.sylvypuppy.puppyscrazyaddons.PuppysCrazyAddOns;
 import com.sylvypuppy.puppyscrazyaddons.block.ModBlocks;
+import com.sylvypuppy.puppyscrazyaddons.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -32,5 +33,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.Puppore_Block.get())
                 .add(ModBlocks.Puppore_Brick.get());
 
+        tag(ModTags.Blocks.NEEDS_PUPPORE_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_PUPPORE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_PUPPORE_TOOL);
     }
 }

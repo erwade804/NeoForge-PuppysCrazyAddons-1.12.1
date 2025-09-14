@@ -8,9 +8,21 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
+import static com.sylvypuppy.puppyscrazyaddons.util.ModTags.Blocks.createTag;
+
 public class ModTags {
+
+
+
+
+
+
+
     public static class Blocks{
-        private static TagKey<Block> createTag(String name){
+        public static final TagKey<Block> NEEDS_PUPPORE_TOOL = createTag("needs_puppore_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PUPPORE_TOOL = createTag("incorrect_for_puppore_tool");
+
+        public static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(PuppysCrazyAddOns.MODID, name));
         }
     }

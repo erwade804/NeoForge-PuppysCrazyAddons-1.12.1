@@ -6,6 +6,7 @@ import com.sylvypuppy.puppyscrazyaddons.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -21,5 +22,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.Puppore.get());
+        tag(ItemTags.SWORDS)
+                .add(ModItems.Puppore_Sword.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.Puppore_Axe.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.Puppore_Pickaxe.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.Puppore_Hoe.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.Puppore_Shovel.get());
     }
 }
