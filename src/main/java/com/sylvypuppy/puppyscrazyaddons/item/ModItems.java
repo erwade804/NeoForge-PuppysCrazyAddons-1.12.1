@@ -3,6 +3,7 @@ package com.sylvypuppy.puppyscrazyaddons.item;
 import com.sylvypuppy.puppyscrazyaddons.PuppysCrazyAddOns;
 import com.sylvypuppy.puppyscrazyaddons.item.custom.ChiselItem;
 import com.sylvypuppy.puppyscrazyaddons.item.custom.FuelItem;
+import com.sylvypuppy.puppyscrazyaddons.item.custom.HammerItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -45,12 +46,20 @@ public class ModItems {
                             .attributes(
                                     ShovelItem.createAttributes(
                                             ModToolTiers.PUPPORE, 2, -2.4f))));
+    public static final DeferredItem<HammerItem> Puppore_Hammer = ITEMS.register("puppore_hammer",
+            () -> new HammerItem(ModToolTiers.PUPPORE,
+                    new Item.Properties()
+                            .attributes(
+                                    PickaxeItem.createAttributes(
+                                            ModToolTiers.PUPPORE, 7f, -3.2f))));
 
     /*
         All other items
      */
 
     public static final DeferredItem<Item> Puppore = ITEMS.register("puppore",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> Puppore_Plate = ITEMS.register("puppore_plate",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> Raw_Puppore = ITEMS.register("raw_puppore",
             () -> new Item(new Item.Properties()));

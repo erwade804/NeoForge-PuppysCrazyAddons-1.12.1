@@ -76,6 +76,7 @@ public class PuppysCrazyAddOns {
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.Puppore_Hammer);
             event.accept(ModItems.Puppore_Axe);
             event.accept(ModItems.Puppore_Hoe);
             event.accept(ModItems.Puppore_Shovel);

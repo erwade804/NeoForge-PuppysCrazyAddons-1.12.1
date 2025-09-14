@@ -21,7 +21,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItems(ModItems.Puppore_Hoe);
         handheldItems(ModItems.Puppore_Shovel);
         handheldItems(ModItems.Puppore_Sword);
+        handheldItems(ModItems.Puppore_Hammer);
 
+        basicItem(ModItems.Puppore_Plate.get());
         basicItem(ModItems.Raw_Puppore.get());
         basicItem(ModItems.Chisel.get());
         basicItem(ModItems.Puppore.get());

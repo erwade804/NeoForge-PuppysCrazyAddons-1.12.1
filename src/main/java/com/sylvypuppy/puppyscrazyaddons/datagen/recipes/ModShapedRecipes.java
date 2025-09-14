@@ -19,7 +19,7 @@ public class ModShapedRecipes extends RecipeProvider implements IConditionBuilde
         super(output, registries);
     }
 
-    public static void shapedRecipes(RecipeOutput recipeOutput){
+    public static void shapedRecipes(RecipeOutput recipeOutput) {
 
         /*
 
@@ -42,6 +42,14 @@ public class ModShapedRecipes extends RecipeProvider implements IConditionBuilde
             Tools
 
          */
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Hammer.get())
+                .pattern(" C ")
+                .pattern(" BC")
+                .pattern("B  ")
+                .define('C', ModItems.Puppore_Plate.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_puppore_plate", has(ModItems.Puppore_Plate))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_hammer_from_crafting");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Pickaxe.get())
                 .pattern("CCC")
@@ -50,43 +58,43 @@ public class ModShapedRecipes extends RecipeProvider implements IConditionBuilde
                 .define('C', ModItems.Puppore.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_puppore", has(ModItems.Puppore))
-                .save(recipeOutput, "puppyscrazyaddons:puppore_pickaxe_craft");
+                .save(recipeOutput, "puppyscrazyaddons:puppore_pickaxe_from_crafting");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Axe.get())
-                .pattern("CC ")
-                .pattern("CB ")
-                .pattern(" B ")
+                .pattern("CC")
+                .pattern("CB")
+                .pattern(" B")
                 .define('C', ModItems.Puppore.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_puppore", has(ModItems.Puppore))
-                .save(recipeOutput, "puppyscrazyaddons:puppore_axe_craft");
+                .save(recipeOutput, "puppyscrazyaddons:puppore_axe_from_crafting");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Hoe.get())
-                .pattern("CC ")
-                .pattern(" B ")
-                .pattern(" B ")
+                .pattern("CC")
+                .pattern(" B")
+                .pattern("  ")
                 .define('C', ModItems.Puppore.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_puppore", has(ModItems.Puppore))
-                .save(recipeOutput, "puppyscrazyaddons:puppore_hoe_craft");
+                .save(recipeOutput, "puppyscrazyaddons:puppore_hoe_from_crafting");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Sword.get())
-                .pattern(" C ")
-                .pattern(" C ")
-                .pattern(" B ")
+                .pattern("C")
+                .pattern("C")
+                .pattern("B")
                 .define('C', ModItems.Puppore.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_puppore", has(ModItems.Puppore))
-                .save(recipeOutput, "puppyscrazyaddons:puppore_sword_craft");
+                .save(recipeOutput, "puppyscrazyaddons:puppore_sword_from_crafting");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Shovel.get())
-                .pattern(" C ")
-                .pattern(" B ")
-                .pattern(" B ")
+                .pattern("C")
+                .pattern("B")
+                .pattern("B")
                 .define('C', ModItems.Puppore.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_puppore", has(ModItems.Puppore))
-                .save(recipeOutput, "puppyscrazyaddons:puppore_shovel_craft");
+                .save(recipeOutput, "puppyscrazyaddons:puppore_shovel_from_crafting");
 
         /*
 
@@ -105,7 +113,7 @@ public class ModShapedRecipes extends RecipeProvider implements IConditionBuilde
 
 
 
-        /*
+         /*
 
             SMELTABLES
 
@@ -140,5 +148,20 @@ public class ModShapedRecipes extends RecipeProvider implements IConditionBuilde
                 .define('C', Items.STICK)
                 .unlockedBy("has_puppore", has(ModItems.Puppore))
                 .save(recipeOutput, "puppyscrazyaddons:unrefined_chisel_from_crafting");
+
+         /*
+
+            Ingredients
+
+         */
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Puppore_Plate.get())
+                .pattern("BB")
+                .pattern("BB")
+                .define('B', ModItems.Puppore.get())
+                .unlockedBy("has_puppore", has(ModItems.Puppore))
+                .save(recipeOutput, "puppyscrazyaddons:puppore_plate_from_crafting");
+
+
     }
 }
