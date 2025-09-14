@@ -62,7 +62,7 @@ public class ModItems {
     public static final DeferredItem<Item> Puppore_Plate = ITEMS.register("puppore_plate",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> Raw_Puppore = ITEMS.register("raw_puppore",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RAW_PUPPORE)));
     public static final DeferredItem<Item> Puppore_Apple = ITEMS.register("puppore_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.PUPPORE_APPLE)));
     public static final DeferredItem<Item> Chisel = ITEMS.register("chisel",

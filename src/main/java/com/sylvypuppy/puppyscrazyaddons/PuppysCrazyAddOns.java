@@ -63,12 +63,13 @@ public class PuppysCrazyAddOns {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.Puppore);
-            event.accept(ModItems.Raw_Puppore);
             event.accept(ModItems.Puppore_Coal);
+            event.accept(ModItems.Raw_Puppore);
         }
 
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.Puppore_Apple);
+            event.accept(ModItems.Raw_Puppore);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
